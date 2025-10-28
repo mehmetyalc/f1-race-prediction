@@ -1,0 +1,37 @@
+============================================================
+F1 RACE PREDICTION - MODEL TRAINING RESULTS
+============================================================
+
+REGRESSION MODELS (Position Prediction)
+------------------------------------------------------------
+
+RF_REGRESSOR:
+  MAE:  3.726
+  RMSE: 4.802
+  R²:   0.288
+
+XGB_REGRESSOR:
+  MAE:  3.816
+  RMSE: 4.990
+  R²:   0.231
+
+LGB_REGRESSOR:
+  MAE:  3.773
+  RMSE: 4.854
+  R²:   0.272
+
+
+CLASSIFICATION MODELS (Podium Prediction)
+------------------------------------------------------------
+
+RF_CLASSIFIER_PODIUM:
+  Accuracy: 0.850
+  F1-Score: 0.000
+
+XGB_CLASSIFIER_PODIUM:
+  Accuracy: 0.838
+  F1-Score: 0.000
+
+LGB_CLASSIFIER_PODIUM:
+  Accuracy: 0.838
+  F1-Score: 0.000

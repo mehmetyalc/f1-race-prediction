@@ -1,0 +1,29 @@
+{
+  "rf_regressor": {
+    "mae": 3.726386588570128,
+    "rmse": 4.801924503603881,
+    "r2": 0.28787553404079114
+  },
+  "xgb_regressor": {
+    "mae": 3.8157551288604736,
+    "rmse": 4.990402356211359,
+    "r2": 0.23087596893310547
+  },
+  "lgb_regressor": {
+    "mae": 3.7729571726243805,
+    "rmse": 4.853871824964308,
+    "r2": 0.2723846391883116
+  },
+  "rf_classifier_podium": {
+    "accuracy": 0.85,
+    "f1_score": 0.0
+  },
+  "xgb_classifier_podium": {
+    "accuracy": 0.8375,
+    "f1_score": 0.0
+  },
+  "lgb_classifier_podium": {
+    "accuracy": 0.8375,
+    "f1_score": 0.0
+  }
+}
