@@ -1,0 +1,62 @@
+======================================================================
+F1 RACE PREDICTION - ENHANCED MODEL TRAINING RESULTS
+======================================================================
+
+DATASET INFORMATION
+----------------------------------------------------------------------
+Total Samples: 319
+Features: 28
+Training Set: 255
+Test Set: 64
+
+ENHANCED FEATURES ADDED
+----------------------------------------------------------------------
+- Qualifying position (grid position)
+- Grid position gain
+- Average race pace
+- Best race pace
+- Pace consistency
+- Clean laps count
+- Team average position
+- Team best position
+- Team driver count
+
+MODEL PERFORMANCE
+----------------------------------------------------------------------
+
+RF_ENHANCED:
+  MAE:  2.241 positions
+  RMSE: 3.478 positions
+  R²:   0.613
+  CV R² (5-fold): 0.728 ± 0.145
+
+XGB_ENHANCED:
+  MAE:  2.328 positions
+  RMSE: 3.547 positions
+  R²:   0.597
+  CV R² (5-fold): 0.740 ± 0.117
+
+LGB_ENHANCED:
+  MAE:  2.375 positions
+  RMSE: 3.411 positions
+  R²:   0.628
+  CV R² (5-fold): 0.709 ± 0.112
+
+
+TOP 15 FEATURE IMPORTANCE (Random Forest)
+----------------------------------------------------------------------
+team_avg_position             : 0.6610
+team_best_position            : 0.1289
+clean_laps_count              : 0.0673
+driver_worst_position         : 0.0270
+driver_recent_form            : 0.0238
+pace_consistency              : 0.0136
+driver_avg_position           : 0.0103
+circuit_driver_avg_position   : 0.0101
+avg_pit_duration              : 0.0088
+avg_race_pace                 : 0.0080
+best_race_pace                : 0.0072
+driver_top5                   : 0.0044
+driver_top10                  : 0.0035
+humidity                      : 0.0035
+pit_stop_count                : 0.0035
