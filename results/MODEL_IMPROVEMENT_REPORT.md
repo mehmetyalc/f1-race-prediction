@@ -8,15 +8,15 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 
 ---
 
-## 🎯 Improvement Overview
+##  Improvement Overview
 
 ### Performance Metrics Comparison
 
 | Metric | Baseline Model | Enhanced Model | Improvement |
 |--------|---------------|----------------|-------------|
-| **R² Score** | 0.288 | **0.628** | **+118%** 🚀 |
-| **MAE (positions)** | 3.726 | **2.241** | **-40%** ✅ |
-| **RMSE (positions)** | 4.802 | **3.411** | **-29%** ✅ |
+| **R² Score** | 0.288 | **0.628** | **+118%**  |
+| **MAE (positions)** | 3.726 | **2.241** | **-40%**  |
+| **RMSE (positions)** | 4.802 | **3.411** | **-29%**  |
 | **CV R² (5-fold)** | N/A | **0.728 ± 0.145** | New metric |
 
 ### Model-by-Model Comparison
@@ -31,7 +31,7 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 
 ---
 
-## 📊 What Changed?
+##  What Changed?
 
 ### Feature Set Expansion
 
@@ -43,15 +43,15 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 - Miscellaneous (1 feature)
 
 **Enhanced Features (28):**
-- **✨ Qualifying position** - Grid starting position
-- **✨ Grid position gain** - Positions gained/lost from grid
-- **✨ Average race pace** - Clean air lap times
-- **✨ Best race pace** - Fastest clean lap
-- **✨ Pace consistency** - Lap time standard deviation
-- **✨ Clean laps count** - Number of unimpeded laps
-- **✨ Team average position** - Constructor performance
-- **✨ Team best position** - Best teammate result
-- **✨ Team driver count** - Team size
+- ** Qualifying position** - Grid starting position
+- ** Grid position gain** - Positions gained/lost from grid
+- ** Average race pace** - Clean air lap times
+- ** Best race pace** - Fastest clean lap
+- ** Pace consistency** - Lap time standard deviation
+- ** Clean laps count** - Number of unimpeded laps
+- ** Team average position** - Constructor performance
+- ** Team best position** - Best teammate result
+- ** Team driver count** - Team size
 - Plus all 20 baseline features
 
 **New Feature Categories:**
@@ -61,27 +61,27 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 
 ---
 
-## 🔍 Feature Importance Analysis
+##  Feature Importance Analysis
 
 ### Top 15 Most Important Features (Random Forest Enhanced)
 
 | Rank | Feature | Importance | Category |
 |------|---------|------------|----------|
-| 1 | qualifying_position | 0.3245 | **Qualifying** ⭐ |
+| 1 | qualifying_position | 0.3245 | **Qualifying**  |
 | 2 | driver_best_position | 0.1876 | Driver Historical |
-| 3 | avg_race_pace | 0.1234 | **Race Pace** ⭐ |
+| 3 | avg_race_pace | 0.1234 | **Race Pace**  |
 | 4 | driver_avg_position | 0.0987 | Driver Historical |
-| 5 | team_avg_position | 0.0654 | **Team Performance** ⭐ |
+| 5 | team_avg_position | 0.0654 | **Team Performance**  |
 | 6 | driver_top5 | 0.0543 | Driver Historical |
-| 7 | best_race_pace | 0.0432 | **Race Pace** ⭐ |
+| 7 | best_race_pace | 0.0432 | **Race Pace**  |
 | 8 | driver_recent_form | 0.0321 | Driver Historical |
-| 9 | pace_consistency | 0.0298 | **Race Pace** ⭐ |
-| 10 | grid_position_gain | 0.0234 | **Qualifying** ⭐ |
+| 9 | pace_consistency | 0.0298 | **Race Pace**  |
+| 10 | grid_position_gain | 0.0234 | **Qualifying**  |
 | 11 | circuit_driver_avg_position | 0.0198 | Circuit-Specific |
-| 12 | team_best_position | 0.0176 | **Team Performance** ⭐ |
+| 12 | team_best_position | 0.0176 | **Team Performance**  |
 | 13 | driver_podiums | 0.0154 | Driver Historical |
 | 14 | avg_pit_duration | 0.0132 | Pit Strategy |
-| 15 | clean_laps_count | 0.0121 | **Race Pace** ⭐ |
+| 15 | clean_laps_count | 0.0121 | **Race Pace**  |
 
 **Key Insight:** The top 3 features include 2 newly added features (qualifying_position, avg_race_pace), demonstrating their critical importance.
 
@@ -89,11 +89,11 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 - **Qualifying features:** 35.8% combined importance
 - **Race pace features:** 20.9% combined importance
 - **Team performance features:** 8.3% combined importance
-- **Total new features:** 65% of model importance! 🎯
+- **Total new features:** 65% of model importance! 
 
 ---
 
-## 📈 Prediction Accuracy Improvement
+##  Prediction Accuracy Improvement
 
 ### Error Distribution
 
@@ -103,9 +103,9 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 - Mean error: 3.73 positions
 
 **Enhanced Model:**
-- **50% of predictions within ±1.5 positions** ✅
-- **80% of predictions within ±3.5 positions** ✅
-- **Mean error: 2.24 positions** ✅
+- **50% of predictions within ±1.5 positions** 
+- **80% of predictions within ±3.5 positions** 
+- **Mean error: 2.24 positions** 
 
 **Improvement:** 40% reduction in prediction error!
 
@@ -122,9 +122,9 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 
 ---
 
-## 🚀 Why Did Performance Improve So Much?
+##  Why Did Performance Improve So Much?
 
-### 1. Qualifying Position is King 👑
+### 1. Qualifying Position is King 
 
 **Impact:** 32.5% feature importance (highest)
 
@@ -135,7 +135,7 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 - Average position change from grid: ±2.3 positions
 - 70% of pole sitters finish on podium
 
-### 2. Race Pace Reveals True Speed 🏎️
+### 2. Race Pace Reveals True Speed ️
 
 **Impact:** 20.9% combined importance
 
@@ -146,7 +146,7 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 - Pace consistency → fewer mistakes (r = -0.54)
 - Clean laps count → race experience (r = 0.43)
 
-### 3. Team Performance Provides Context 🏁
+### 3. Team Performance Provides Context 
 
 **Impact:** 8.3% combined importance
 
@@ -159,7 +159,7 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 
 ---
 
-## 🎓 Lessons Learned
+##  Lessons Learned
 
 ### What Worked
 
@@ -195,7 +195,7 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 
 ---
 
-## 📊 Statistical Validation
+##  Statistical Validation
 
 ### Cross-Validation Results (5-Fold)
 
@@ -221,7 +221,7 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 ### Potential Next Steps
 
@@ -254,7 +254,7 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 
 ---
 
-## 💡 Recommendations
+##  Recommendations
 
 ### For Model Deployment
 
@@ -298,11 +298,11 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 The enhanced F1 race prediction model demonstrates that **domain expertise and feature engineering are paramount** in machine learning success.
 
 **Key Achievements:**
-- ✅ R² improved from 0.288 to 0.628 (+118%)
-- ✅ MAE reduced from 3.73 to 2.24 positions (-40%)
-- ✅ Identified qualifying position as most critical feature (32.5% importance)
-- ✅ Validated with cross-validation (CV R² = 0.728)
-- ✅ Production-ready model with robust performance
+-  R² improved from 0.288 to 0.628 (+118%)
+-  MAE reduced from 3.73 to 2.24 positions (-40%)
+-  Identified qualifying position as most critical feature (32.5% importance)
+-  Validated with cross-validation (CV R² = 0.728)
+-  Production-ready model with robust performance
 
 **Impact:**
 - Model now suitable for real-world F1 prediction applications
