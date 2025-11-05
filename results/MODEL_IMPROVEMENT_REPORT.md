@@ -135,7 +135,7 @@ This report documents the dramatic improvement achieved by enhancing the F1 race
 - Average position change from grid: ±2.3 positions
 - 70% of pole sitters finish on podium
 
-### 2. Race Pace Reveals True Speed ️
+### 2. Race Pace Reveals True Speed 
 
 **Impact:** 20.9% combined importance
 

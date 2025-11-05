@@ -296,7 +296,7 @@ python src/evaluation/evaluate_and_visualize.py
 - Average position change: only ±2.3 positions
 - Qualifying explains 67% of final position variance
 
-### 2. Race Pace Reveals True Speed ️
+### 2. Race Pace Reveals True Speed 
 
 **Finding:** Clean air race pace is 2nd most predictive category (20.9% combined importance)
 
